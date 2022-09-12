@@ -6,7 +6,9 @@ class GFG
     
 
     static void leftRotate(int arr[], int d, int n)
-    {
+    {    
+        if(d>n)
+            d=d-n;
     	reverse(arr, 0, d - 1);
 
     	reverse(arr, d, n - 1);
