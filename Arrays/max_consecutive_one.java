@@ -19,6 +19,7 @@ public class Main {
     }
 
   static int max_consecutive_one(int[] arr){
+      // Big o of n;
         int res = 0,count=0;
         for(int i=0;i<arr.length;i++){
             if(arr[i] == 0){
