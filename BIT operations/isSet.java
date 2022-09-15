@@ -5,17 +5,12 @@ import java.util.Scanner;
 public class Main {
     static Scanner scan  = new Scanner(System.in);
     public static void main(String[] args) {
-        int[] arr = {10,10,10,30,30,40};
-//        for(int i=0;i<arr.length;i++){
-//            arr[i] = scan.nextInt();
-//        }
+        int[] arr = {10,10,10,30,30,40, 6};
+
+
        int num = 5;
         System.out.println(isSet1(num,3));
 
-//        for(int i=0;i<arr.length;i++){
-//            System.out.println(arr[i]);
-//        }
-     }
 
      static boolean isSet(int num , int pos){
         if(((1<<pos-1) & num)!=0)
@@ -30,3 +25,4 @@ public class Main {
         return false;
      }
 }
+
